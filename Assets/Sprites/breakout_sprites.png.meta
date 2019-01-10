@@ -2,17 +2,17 @@ fileFormatVersion: 2
 guid: e5ae5ffae5059d84894fb9987b6b2193
 TextureImporter:
   fileIDToRecycleName:
-    21300000: breakout_sprites(no shadow)_0
-    21300002: breakout_sprites(no shadow)_1
-    21300004: breakout_sprites(no shadow)_2
-    21300006: breakout_sprites(no shadow)_3
-    21300008: breakout_sprites(no shadow)_4
-    21300010: breakout_sprites(no shadow)_5
-    21300012: breakout_sprites(no shadow)_6
-    21300014: breakout_sprites(no shadow)_7
-    21300016: breakout_sprites(no shadow)_8
+    21300000: block_r
+    21300002: block_p
+    21300004: block_o
+    21300006: block_db
+    21300008: block_lb
+    21300010: block_dg
+    21300012: block_lg
+    21300014: star
+    21300016: stone_wall
     21300018: breakout_sprites(no shadow)_9
-    21300020: breakout_sprites(no shadow)_10
+    21300020: brick_wall
     21300022: breakout_sprites(no shadow)_11
     21300024: breakout_sprites(no shadow)_12
     21300026: breakout_sprites(no shadow)_13
@@ -109,7 +109,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -173,7 +173,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_0
+      name: block_r
       rect:
         serializedVersion: 2
         x: 0
@@ -193,7 +193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_1
+      name: block_p
       rect:
         serializedVersion: 2
         x: 40
@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_2
+      name: block_o
       rect:
         serializedVersion: 2
         x: 80
@@ -233,7 +233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_3
+      name: block_db
       rect:
         serializedVersion: 2
         x: 121
@@ -253,7 +253,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_4
+      name: block_lb
       rect:
         serializedVersion: 2
         x: 160
@@ -273,7 +273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_5
+      name: block_dg
       rect:
         serializedVersion: 2
         x: 201
@@ -293,7 +293,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_6
+      name: block_lg
       rect:
         serializedVersion: 2
         x: 240
@@ -313,7 +313,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_7
+      name: star
       rect:
         serializedVersion: 2
         x: 280
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_8
+      name: stone_wall
       rect:
         serializedVersion: 2
         x: 320
@@ -373,7 +373,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: breakout_sprites(no shadow)_10
+      name: brick_wall
       rect:
         serializedVersion: 2
         x: 0
