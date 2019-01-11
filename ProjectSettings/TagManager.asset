@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - HorizontalLimits
   - VerticalLimits
+  - Ground
   layers:
   - Default
   - TransparentFX
