@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 840557386}
   m_Layer: 0
   m_Name: Bar
-  m_TagString: Untagged
+  m_TagString: HorizontalLimits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ef7da3084fc4f49be476ea7a9d9c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 20
 --- !u!61 &840557385
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 1180580917}
   - component: {fileID: 1180580920}
   - component: {fileID: 1180580919}
+  - component: {fileID: 1180580921}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -454,6 +455,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.12
+--- !u!114 &1180580921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180580916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b7bdfa243da1a41af3fd73de3ffa8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0.1
+  speedY: 0.1
 --- !u!1 &1388191927
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +482,7 @@ GameObject:
   - component: {fileID: 1388191930}
   m_Layer: 0
   m_Name: brick_wall_t
-  m_TagString: Untagged
+  m_TagString: HorizontalLimits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -514,7 +529,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 5.9986253, y: 0.32}
+  m_Size: {x: 5.986429, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
@@ -528,7 +543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388191927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.613, y: 4.38, z: 0}
+  m_LocalPosition: {x: 0.6374, y: 4.38, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -552,7 +567,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 5.9986253, y: 0.32}
+    newSize: {x: 5.986429, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 1
@@ -573,7 +588,7 @@ GameObject:
   - component: {fileID: 1778863631}
   m_Layer: 0
   m_Name: brick_wall_r
-  m_TagString: Untagged
+  m_TagString: VerticalLimits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -620,7 +635,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 0.32, y: 2.2207084}
+  m_Size: {x: 0.32, y: 2.218966}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
@@ -634,7 +649,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778863628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.02, y: -0.658, z: 0}
+  m_LocalPosition: {x: 12.02, y: -0.6615, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -658,7 +673,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 0.32, y: 2.2207084}
+    newSize: {x: 0.32, y: 2.218966}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 1
@@ -679,7 +694,7 @@ GameObject:
   - component: {fileID: 1856571698}
   m_Layer: 0
   m_Name: brick_wall_l
-  m_TagString: Untagged
+  m_TagString: VerticalLimits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
