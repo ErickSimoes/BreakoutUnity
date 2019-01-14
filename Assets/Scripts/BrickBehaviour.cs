@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class BrickBehaviour : MonoBehaviour {
 
-    void Start() {
-        
+    private AudioSource source;
+
+    private void Awake() {
+        source = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -13,6 +15,7 @@ public class BrickBehaviour : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        Destroy(gameObject);
+        source.Play();
+        Destroy(gameObject, 0.044f);
     }
 }
