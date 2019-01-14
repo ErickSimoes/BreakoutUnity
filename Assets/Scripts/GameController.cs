@@ -22,8 +22,10 @@ public class GameController : MonoBehaviour {
     }
 
     public void CreateBricks() {
-        for (float x = -9; x < 9; x = x + 1.196f) {
-            Instantiate(brick, new Vector3(x, 2, 0), Quaternion.identity);
+        for (float y = 2; y > 0; y = y - 1.179f) {
+            for (float x = -9; x < 9; x = x + 1.196f) {
+                Instantiate(brick, new Vector3(x, y, 0), Quaternion.identity);
+            }
         }
     }
 
