@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
     public Transform brick;
+    public Text textPoints;
 
     private static int points;
+    private int rPoints;
 
     public static int Points {
         get => points;
@@ -20,8 +23,13 @@ public class GameController : MonoBehaviour {
 
     void Start() {
         CreateBricks();
+        rPoints = points;
     }
-    
+
+    private void Update() {
+        textPoints.text = "Points: " + (rPoints - points);
+    }
+
     /// <summary>
     /// Finish the game
     /// True if win or false if lose.

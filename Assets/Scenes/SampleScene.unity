@@ -437,6 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brick: {fileID: 1641036484630616238, guid: 4c2e3c33c494ea8478e17535df6fa09f, type: 3}
+  textPoints: {fileID: 1263790753}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
