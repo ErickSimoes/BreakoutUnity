@@ -7,8 +7,10 @@ public class BallBehaviour : MonoBehaviour {
     public float speedX;
     public float speedY;
 
-    void Start() {
-        
+    private void Update() {
+        if (GameController.state != GameController.GameOverState.playing) {
+            gameObject.SetActive(false);
+        }
     }
 
     void FixedUpdate() {

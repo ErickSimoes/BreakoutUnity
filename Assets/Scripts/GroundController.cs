@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundController : MonoBehaviour
-{
+public class GroundController : MonoBehaviour {
     void Start() {
         
     }

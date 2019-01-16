@@ -6,8 +6,10 @@ public class BarBehaviour : MonoBehaviour {
 
     public float speed = 20f;
 
-    void Start() {
-        
+    private void Update() {
+        if (GameController.state != GameController.GameOverState.playing) {
+            gameObject.SetActive(false);
+        }
     }
 
     void FixedUpdate() {
