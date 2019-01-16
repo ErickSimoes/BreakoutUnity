@@ -24,8 +24,11 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    void Start() {
+    private void Awake() {
         CreateBricks();
+    }
+
+    void Start() {
         rPoints = points;
     }
 
