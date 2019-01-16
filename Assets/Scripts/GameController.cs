@@ -45,10 +45,8 @@ public class GameController : MonoBehaviour {
     /// </summary>
     public void GameOver(bool win) {
         if (win) {
-            Debug.Log("Win!");
             textResult.text = "YOU WIN!";
         } else {
-            Debug.Log("Game Over");
             textResult.text = "YOU LOSE!";
         }
         textResult.gameObject.SetActive(true);
@@ -62,8 +60,5 @@ public class GameController : MonoBehaviour {
             }
         }
     }
-
-
-
-
+    
 }
