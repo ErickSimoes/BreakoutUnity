@@ -7,6 +7,9 @@ public class GameController : MonoBehaviour {
 
     public Transform brick;
     public Text textPoints;
+    public Text textResult;
+    public enum GameOverState { playing, win, lose};
+    public static GameOverState state = GameOverState.playing;
 
     private static int points;
     private int rPoints;
@@ -15,7 +18,7 @@ public class GameController : MonoBehaviour {
         get => points;
         set {
             if (points <= 0) {
-                GameOver(true);
+                state = GameOverState.win;
             }
             points = value;
         }
@@ -28,18 +31,27 @@ public class GameController : MonoBehaviour {
 
     private void Update() {
         textPoints.text = "Points: " + (rPoints - points);
+        if (state.Equals(GameOverState.win)) {
+            GameOver(true);
+        }
+        if (state.Equals(GameOverState.lose)) {
+            GameOver(false);
+        }
     }
 
     /// <summary>
     /// Finish the game
     /// True if win or false if lose.
     /// </summary>
-    public static void GameOver(bool win) {
+    public void GameOver(bool win) {
         if (win) {
             Debug.Log("Win!");
+            textResult.text = "YOU WIN!";
         } else {
             Debug.Log("Game Over");
+            textResult.text = "YOU LOSE!";
         }
+        textResult.gameObject.SetActive(true);
     }
 
     public void CreateBricks() {

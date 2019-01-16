@@ -13,6 +13,6 @@ public class GroundController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        GameController.GameOver(false);
+        GameController.state = GameController.GameOverState.lose;
     }
 }
